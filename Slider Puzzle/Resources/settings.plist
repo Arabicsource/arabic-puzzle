@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pieciesMode</key>
+	<integer>1</integer>
+	<key>showNumberOnTiles</key>
+	<integer>1</integer>
+	<key>version</key>
+	<string>0.1</string>
+	<key>currentImage</key>
+	<string>a.png</string>
+	<key>images</key>
+	<array>
+		<dict>
+			<key>title</key>
+			<string>a - ا</string>
+			<key>name</key>
+			<string>a.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>b - ب</string>
+			<key>name</key>
+			<string>b.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>t - ت</string>
+			<key>name</key>
+			<string>t.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>ث - th  </string>
+			<key>name</key>
+			<string>th.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>j - ج</string>
+			<key>name</key>
+			<string>j.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>h - ح</string>
+			<key>name</key>
+			<string>h.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>kh -خ</string>
+			<key>name</key>
+			<string>kh.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>d - د</string>
+			<key>name</key>
+			<string>d.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>th - ذ</string>
+			<key>name</key>
+			<string>th2.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>r - ر</string>
+			<key>name</key>
+			<string>r.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>z - ز</string>
+			<key>name</key>
+			<string>z.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>s - س</string>
+			<key>name</key>
+			<string>s.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>sh - ش</string>
+			<key>name</key>
+			<string>sh.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>s - ص</string>
+			<key>name</key>
+			<string>s2.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>d - ض</string>
+			<key>name</key>
+			<string>d2.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>t - ط</string>
+			<key>name</key>
+			<string>t.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>th - ظ</string>
+			<key>name</key>
+			<string>th3.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>aa - ع</string>
+			<key>name</key>
+			<string>aa.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>gh - غ</string>
+			<key>name</key>
+			<string>gh.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>f - ف </string>
+			<key>name</key>
+			<string>f.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>q - ق</string>
+			<key>name</key>
+			<string>q.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>k - ك</string>
+			<key>name</key>
+			<string>k.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>l - ل</string>
+			<key>name</key>
+			<string>l.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>m - م</string>
+			<key>name</key>
+			<string>m.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>n - ن</string>
+			<key>name</key>
+			<string>n.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>h - ه</string>
+			<key>name</key>
+			<string>h2.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>w - و</string>
+			<key>name</key>
+			<string>w.png</string>
+		</dict>
+		<dict>
+			<key>title</key>
+			<string>y - ي</string>
+			<key>name</key>
+			<string>y.png</string>
+		</dict>
+	</array>
+</dict>
+</plist>

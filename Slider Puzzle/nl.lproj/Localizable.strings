@@ -1,0 +1,28 @@
+//
+//  Localizations
+//  Sliding Puzzle
+//
+//  Created by Adil Ben Moussa on 5/7/12.
+//  Copyright (c) 2012 Islamhome.info. All rights reserved.
+//
+
+/////////////
+// Dutch 
+/////////////
+"Start" = "Begin";
+"Reset" = "Wissen";
+"Image preview" = "Afbeelding bekijken";
+"Image" = "Afbeelding";
+"Settings" = "Instellingen";
+"Select new puzzle" = "Nieuwe puzzel";
+"Tell a friend" = "Vertel een vriend";
+"About app" = "Over %@";
+"Write a review" = "Schrijf een review";
+"You Won!" = "U heeft Gewonnen!";
+"Great Job!" = "Goed Gedaan!";
+"OK" = "OK";
+"Show numbers" = "Toon nummers:";
+"Difficulty level" = "Moeilijkheidsgraad:";
+"Created by" = "Gemaakt door %@";
+"Copyright"= "© %@";
+"Tell a friend message" = "Ik heb deze applicatie voor de iPhone en iPod gevonden, en ik dacht dat je deze leuk zou vinden, bekijk het van deze link <b><a href=\"%@\">%@</a></b>";

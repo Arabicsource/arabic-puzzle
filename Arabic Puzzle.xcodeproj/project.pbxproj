@@ -1,0 +1,572 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0110C65D14ECA795008FAC4A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0110C65C14ECA795008FAC4A /* UIKit.framework */; };
+		0110C65F14ECA795008FAC4A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0110C65E14ECA795008FAC4A /* Foundation.framework */; };
+		0110C66114ECA795008FAC4A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0110C66014ECA795008FAC4A /* CoreGraphics.framework */; };
+		0110C66914ECA795008FAC4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110C66814ECA795008FAC4A /* main.m */; };
+		0110C66D14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110C66C14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.m */; };
+		0110C67014ECA795008FAC4A /* IHSlidingPuzzleRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110C66F14ECA795008FAC4A /* IHSlidingPuzzleRootViewController.m */; };
+		0110C67314ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110C67214ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.m */; };
+		0110C68814ECA9B2008FAC4A /* IHTileView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0110C68714ECA9B2008FAC4A /* IHTileView.m */; };
+		6F31A8DA155C3EAA00EA112F /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F31A8D9155C3EAA00EA112F /* MessageViewController.m */; };
+		6F31A8DC155C40BE00EA112F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F31A8DB155C40BE00EA112F /* MessageUI.framework */; };
+		6F53E22415596C8700D57A50 /* IHImageCustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F53E22315596C8700D57A50 /* IHImageCustomCell.m */; };
+		6F706ACE155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F706ACC155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.m */; };
+		6F706ACF155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F706ACD155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.xib */; };
+		6F8F467215584B7500D57FD0 /* IHDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F467115584B7500D57FD0 /* IHDataModel.m */; };
+		6F8F467515584C9600D57FD0 /* IHFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F467415584C9600D57FD0 /* IHFileUtils.m */; };
+		6F8F46791558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F8F46771558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.m */; };
+		6F8F467A1558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F8F46781558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.xib */; };
+		6FB3473015594601009C0D89 /* numpad_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3472F15594601009C0D89 /* numpad_small.png */; };
+		6FB3473315594618009C0D89 /* next_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB3473115594618009C0D89 /* next_small.png */; };
+		6FB347361559463A009C0D89 /* previous_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB347351559463A009C0D89 /* previous_small.png */; };
+		6FB50016155845D6004A456E /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB50015155845D6004A456E /* settings.plist */; };
+		6FB5FFBB15580C84004A456E /* settings_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FB5FFBA15580C84004A456E /* settings_white.png */; };
+		6FB5FFC315581964004A456E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FB5FFC115581964004A456E /* Localizable.strings */; };
+		6FC409BC155D33D500351045 /* b.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC409BB155D33D500351045 /* b.png */; };
+		6FC409BE155D342B00351045 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC409BD155D342B00351045 /* a.png */; };
+		6FC40A1A155D3CC600351045 /* d.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A02155D3CC600351045 /* d.png */; };
+		6FC40A1B155D3CC600351045 /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A03155D3CC600351045 /* d2.png */; };
+		6FC40A1C155D3CC600351045 /* f.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A04155D3CC600351045 /* f.png */; };
+		6FC40A1D155D3CC600351045 /* gh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A05155D3CC600351045 /* gh.png */; };
+		6FC40A1E155D3CC600351045 /* h.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A06155D3CC600351045 /* h.png */; };
+		6FC40A1F155D3CC600351045 /* h2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A07155D3CC600351045 /* h2.png */; };
+		6FC40A20155D3CC600351045 /* j.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A08155D3CC600351045 /* j.png */; };
+		6FC40A21155D3CC600351045 /* k.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A09155D3CC600351045 /* k.png */; };
+		6FC40A22155D3CC600351045 /* kh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0A155D3CC600351045 /* kh.png */; };
+		6FC40A23155D3CC600351045 /* l.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0B155D3CC600351045 /* l.png */; };
+		6FC40A24155D3CC600351045 /* m.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0C155D3CC600351045 /* m.png */; };
+		6FC40A25155D3CC600351045 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0D155D3CC600351045 /* n.png */; };
+		6FC40A26155D3CC600351045 /* q.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0E155D3CC600351045 /* q.png */; };
+		6FC40A27155D3CC600351045 /* r.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A0F155D3CC600351045 /* r.png */; };
+		6FC40A28155D3CC600351045 /* s.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A10155D3CC600351045 /* s.png */; };
+		6FC40A29155D3CC600351045 /* s2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A11155D3CC600351045 /* s2.png */; };
+		6FC40A2A155D3CC600351045 /* sh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A12155D3CC600351045 /* sh.png */; };
+		6FC40A2B155D3CC600351045 /* t.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A13155D3CC600351045 /* t.png */; };
+		6FC40A2C155D3CC600351045 /* th.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A14155D3CC600351045 /* th.png */; };
+		6FC40A2D155D3CC600351045 /* th2.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A15155D3CC600351045 /* th2.png */; };
+		6FC40A2E155D3CC600351045 /* th3.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A16155D3CC600351045 /* th3.png */; };
+		6FC40A2F155D3CC600351045 /* w.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A17155D3CC600351045 /* w.png */; };
+		6FC40A30155D3CC600351045 /* y.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A18155D3CC600351045 /* y.png */; };
+		6FC40A31155D3CC600351045 /* z.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A19155D3CC600351045 /* z.png */; };
+		6FC40A33155D3D0D00351045 /* aa.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A32155D3D0D00351045 /* aa.png */; };
+		6FC40A35155D3FBA00351045 /* IHSlidingPuzzleImageSelectorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A34155D3FBA00351045 /* IHSlidingPuzzleImageSelectorViewController.xib */; };
+		6FC40A37155D3FD200351045 /* IHSlidingPuzzleRootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FC40A36155D3FD200351045 /* IHSlidingPuzzleRootViewController.xib */; };
+		6FC40A39155D403C00351045 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB50015155845D6004A456E /* settings.plist */; };
+		6FC40A3B155D404300351045 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB50015155845D6004A456E /* settings.plist */; };
+		6FC40A3D155D404C00351045 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB50015155845D6004A456E /* settings.plist */; };
+		6FC40A3F155D405400351045 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6FB50015155845D6004A456E /* settings.plist */; };
+		6FE962D71569535D00287DF9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FE962D51569531200287DF9 /* Default@2x.png */; };
+		6FE962D91569536100287DF9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FE962D81569536100287DF9 /* Default.png */; };
+		6FE962DB156955D300287DF9 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FE962DA156955D300287DF9 /* icon@2x.png */; };
+		6FE962DD1569561700287DF9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 6FE962DC1569561700287DF9 /* icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0110C65814ECA795008FAC4A /* Arabic Puzzle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Arabic Puzzle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0110C65C14ECA795008FAC4A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0110C65E14ECA795008FAC4A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0110C66014ECA795008FAC4A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0110C66414ECA795008FAC4A /* Arabic Puzzle-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Arabic Puzzle-Info.plist"; sourceTree = "<group>"; };
+		0110C66814ECA795008FAC4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0110C66A14ECA795008FAC4A /* Arabic Puzzle-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Arabic Puzzle-Prefix.pch"; sourceTree = "<group>"; };
+		0110C66B14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSlidingPuzzleAppDelegate.h; sourceTree = "<group>"; };
+		0110C66C14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHSlidingPuzzleAppDelegate.m; sourceTree = "<group>"; };
+		0110C66E14ECA795008FAC4A /* IHSlidingPuzzleRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSlidingPuzzleRootViewController.h; sourceTree = "<group>"; };
+		0110C66F14ECA795008FAC4A /* IHSlidingPuzzleRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHSlidingPuzzleRootViewController.m; sourceTree = "<group>"; };
+		0110C67114ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSlidingPuzzleImageSelectorViewController.h; sourceTree = "<group>"; };
+		0110C67214ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IHSlidingPuzzleImageSelectorViewController.m; sourceTree = "<group>"; };
+		0110C68614ECA9B2008FAC4A /* IHTileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IHTileView.h; path = ../IHTileView.h; sourceTree = "<group>"; };
+		0110C68714ECA9B2008FAC4A /* IHTileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IHTileView.m; path = ../IHTileView.m; sourceTree = "<group>"; };
+		6F31A8D8155C3EAA00EA112F /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		6F31A8D9155C3EAA00EA112F /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		6F31A8DB155C40BE00EA112F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		6F53E22215596C8700D57A50 /* IHImageCustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHImageCustomCell.h; sourceTree = "<group>"; };
+		6F53E22315596C8700D57A50 /* IHImageCustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHImageCustomCell.m; sourceTree = "<group>"; };
+		6F706ACB155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHSlidingPuzzleSettingsViewController.h; sourceTree = "<group>"; };
+		6F706ACC155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHSlidingPuzzleSettingsViewController.m; sourceTree = "<group>"; };
+		6F706ACD155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHSlidingPuzzleSettingsViewController.xib; sourceTree = "<group>"; };
+		6F8F467015584B7500D57FD0 /* IHDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHDataModel.h; sourceTree = "<group>"; };
+		6F8F467115584B7500D57FD0 /* IHDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHDataModel.m; sourceTree = "<group>"; };
+		6F8F467315584C9600D57FD0 /* IHFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHFileUtils.h; sourceTree = "<group>"; };
+		6F8F467415584C9600D57FD0 /* IHFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHFileUtils.m; sourceTree = "<group>"; };
+		6F8F46761558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IHSlidingPuzzleImagePreviewViewController.h; sourceTree = "<group>"; };
+		6F8F46771558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IHSlidingPuzzleImagePreviewViewController.m; sourceTree = "<group>"; };
+		6F8F46781558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHSlidingPuzzleImagePreviewViewController.xib; sourceTree = "<group>"; };
+		6FB3472F15594601009C0D89 /* numpad_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = numpad_small.png; path = ../numpad_small.png; sourceTree = "<group>"; };
+		6FB3473115594618009C0D89 /* next_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = next_small.png; path = ../next_small.png; sourceTree = "<group>"; };
+		6FB347351559463A009C0D89 /* previous_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = previous_small.png; path = ../previous_small.png; sourceTree = "<group>"; };
+		6FB50015155845D6004A456E /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		6FB5FFBA15580C84004A456E /* settings_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_white.png; sourceTree = "<group>"; };
+		6FB5FFC215581964004A456E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FB5FFC915581BC1004A456E /* IHSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHSettings.h; sourceTree = "<group>"; };
+		6FC409BB155D33D500351045 /* b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = b.png; sourceTree = "<group>"; };
+		6FC409BD155D342B00351045 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
+		6FC40A02155D3CC600351045 /* d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d.png; sourceTree = "<group>"; };
+		6FC40A03155D3CC600351045 /* d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d2.png; sourceTree = "<group>"; };
+		6FC40A04155D3CC600351045 /* f.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = f.png; sourceTree = "<group>"; };
+		6FC40A05155D3CC600351045 /* gh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gh.png; sourceTree = "<group>"; };
+		6FC40A06155D3CC600351045 /* h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h.png; sourceTree = "<group>"; };
+		6FC40A07155D3CC600351045 /* h2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = h2.png; sourceTree = "<group>"; };
+		6FC40A08155D3CC600351045 /* j.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = j.png; sourceTree = "<group>"; };
+		6FC40A09155D3CC600351045 /* k.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = k.png; sourceTree = "<group>"; };
+		6FC40A0A155D3CC600351045 /* kh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kh.png; sourceTree = "<group>"; };
+		6FC40A0B155D3CC600351045 /* l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = l.png; sourceTree = "<group>"; };
+		6FC40A0C155D3CC600351045 /* m.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = m.png; sourceTree = "<group>"; };
+		6FC40A0D155D3CC600351045 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
+		6FC40A0E155D3CC600351045 /* q.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = q.png; sourceTree = "<group>"; };
+		6FC40A0F155D3CC600351045 /* r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = r.png; sourceTree = "<group>"; };
+		6FC40A10155D3CC600351045 /* s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s.png; sourceTree = "<group>"; };
+		6FC40A11155D3CC600351045 /* s2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s2.png; sourceTree = "<group>"; };
+		6FC40A12155D3CC600351045 /* sh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sh.png; sourceTree = "<group>"; };
+		6FC40A13155D3CC600351045 /* t.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = t.png; sourceTree = "<group>"; };
+		6FC40A14155D3CC600351045 /* th.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th.png; sourceTree = "<group>"; };
+		6FC40A15155D3CC600351045 /* th2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th2.png; sourceTree = "<group>"; };
+		6FC40A16155D3CC600351045 /* th3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = th3.png; sourceTree = "<group>"; };
+		6FC40A17155D3CC600351045 /* w.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w.png; sourceTree = "<group>"; };
+		6FC40A18155D3CC600351045 /* y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = y.png; sourceTree = "<group>"; };
+		6FC40A19155D3CC600351045 /* z.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = z.png; sourceTree = "<group>"; };
+		6FC40A32155D3D0D00351045 /* aa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aa.png; sourceTree = "<group>"; };
+		6FC40A34155D3FBA00351045 /* IHSlidingPuzzleImageSelectorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHSlidingPuzzleImageSelectorViewController.xib; sourceTree = "<group>"; };
+		6FC40A36155D3FD200351045 /* IHSlidingPuzzleRootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IHSlidingPuzzleRootViewController.xib; sourceTree = "<group>"; };
+		6FC40A38155D403C00351045 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FC40A3A155D404300351045 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FC40A3C155D404C00351045 /* id */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = id; path = id.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FC40A3E155D405400351045 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		6FE38E87155C5B49002EA316 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6FE962D51569531200287DF9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		6FE962D81569536100287DF9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		6FE962DA156955D300287DF9 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		6FE962DC1569561700287DF9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		6FF7602D155D9E7F00F26C3E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0110C65514ECA795008FAC4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F31A8DC155C40BE00EA112F /* MessageUI.framework in Frameworks */,
+				0110C65D14ECA795008FAC4A /* UIKit.framework in Frameworks */,
+				0110C65F14ECA795008FAC4A /* Foundation.framework in Frameworks */,
+				0110C66114ECA795008FAC4A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0110C64D14ECA795008FAC4A = {
+			isa = PBXGroup;
+			children = (
+				6FE962DC1569561700287DF9 /* icon.png */,
+				6FE962DA156955D300287DF9 /* icon@2x.png */,
+				6FE962D81569536100287DF9 /* Default.png */,
+				6FE962D51569531200287DF9 /* Default@2x.png */,
+				6F31A8DB155C40BE00EA112F /* MessageUI.framework */,
+				0110C66214ECA795008FAC4A /* Slider Puzzle */,
+				0110C65B14ECA795008FAC4A /* Frameworks */,
+				0110C65914ECA795008FAC4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0110C65914ECA795008FAC4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0110C65814ECA795008FAC4A /* Arabic Puzzle.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0110C65B14ECA795008FAC4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0110C65C14ECA795008FAC4A /* UIKit.framework */,
+				0110C65E14ECA795008FAC4A /* Foundation.framework */,
+				0110C66014ECA795008FAC4A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0110C66214ECA795008FAC4A /* Slider Puzzle */ = {
+			isa = PBXGroup;
+			children = (
+				6FB5FFC915581BC1004A456E /* IHSettings.h */,
+				6F402E1E155A5A7C001273E6 /* Model&Utils */,
+				6F402E1D155A5A66001273E6 /* ViewControllers */,
+				6FBB7B731558026C003E4F9B /* Resources */,
+				0110C66314ECA795008FAC4A /* Supporting Files */,
+			);
+			path = "Slider Puzzle";
+			sourceTree = "<group>";
+		};
+		0110C66314ECA795008FAC4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0110C66414ECA795008FAC4A /* Arabic Puzzle-Info.plist */,
+				0110C66814ECA795008FAC4A /* main.m */,
+				0110C66A14ECA795008FAC4A /* Arabic Puzzle-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6F402E1A155A5940001273E6 /* alphabet */ = {
+			isa = PBXGroup;
+			children = (
+				6FC409BD155D342B00351045 /* a.png */,
+				6FC409BB155D33D500351045 /* b.png */,
+				6FC40A02155D3CC600351045 /* d.png */,
+				6FC40A03155D3CC600351045 /* d2.png */,
+				6FC40A04155D3CC600351045 /* f.png */,
+				6FC40A32155D3D0D00351045 /* aa.png */,
+				6FC40A05155D3CC600351045 /* gh.png */,
+				6FC40A06155D3CC600351045 /* h.png */,
+				6FC40A07155D3CC600351045 /* h2.png */,
+				6FC40A08155D3CC600351045 /* j.png */,
+				6FC40A09155D3CC600351045 /* k.png */,
+				6FC40A0A155D3CC600351045 /* kh.png */,
+				6FC40A0B155D3CC600351045 /* l.png */,
+				6FC40A0C155D3CC600351045 /* m.png */,
+				6FC40A0D155D3CC600351045 /* n.png */,
+				6FC40A0E155D3CC600351045 /* q.png */,
+				6FC40A0F155D3CC600351045 /* r.png */,
+				6FC40A10155D3CC600351045 /* s.png */,
+				6FC40A11155D3CC600351045 /* s2.png */,
+				6FC40A12155D3CC600351045 /* sh.png */,
+				6FC40A13155D3CC600351045 /* t.png */,
+				6FC40A14155D3CC600351045 /* th.png */,
+				6FC40A15155D3CC600351045 /* th2.png */,
+				6FC40A16155D3CC600351045 /* th3.png */,
+				6FC40A17155D3CC600351045 /* w.png */,
+				6FC40A18155D3CC600351045 /* y.png */,
+				6FC40A19155D3CC600351045 /* z.png */,
+			);
+			name = alphabet;
+			sourceTree = "<group>";
+		};
+		6F402E1B155A596B001273E6 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				6FE38E87155C5B49002EA316 /* icon.png */,
+				6FF7602D155D9E7F00F26C3E /* icon@2x.png */,
+				6FB347351559463A009C0D89 /* previous_small.png */,
+				6FB3473115594618009C0D89 /* next_small.png */,
+				6FB3472F15594601009C0D89 /* numpad_small.png */,
+				6FB5FFBA15580C84004A456E /* settings_white.png */,
+			);
+			name = icons;
+			sourceTree = "<group>";
+		};
+		6F402E1C155A59EE001273E6 /* others */ = {
+			isa = PBXGroup;
+			children = (
+				6FB50015155845D6004A456E /* settings.plist */,
+				6FB5FFC115581964004A456E /* Localizable.strings */,
+			);
+			name = others;
+			sourceTree = "<group>";
+		};
+		6F402E1D155A5A66001273E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6F31A8D8155C3EAA00EA112F /* MessageViewController.h */,
+				6F31A8D9155C3EAA00EA112F /* MessageViewController.m */,
+				0110C66E14ECA795008FAC4A /* IHSlidingPuzzleRootViewController.h */,
+				0110C66F14ECA795008FAC4A /* IHSlidingPuzzleRootViewController.m */,
+				6FC40A36155D3FD200351045 /* IHSlidingPuzzleRootViewController.xib */,
+				0110C67114ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.h */,
+				0110C67214ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.m */,
+				6FC40A34155D3FBA00351045 /* IHSlidingPuzzleImageSelectorViewController.xib */,
+				6F8F46761558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.h */,
+				6F8F46771558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.m */,
+				6F8F46781558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.xib */,
+				6F706ACB155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.h */,
+				6F706ACC155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.m */,
+				6F706ACD155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.xib */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6F402E1E155A5A7C001273E6 /* Model&Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0110C68614ECA9B2008FAC4A /* IHTileView.h */,
+				0110C68714ECA9B2008FAC4A /* IHTileView.m */,
+				6F53E22215596C8700D57A50 /* IHImageCustomCell.h */,
+				6F53E22315596C8700D57A50 /* IHImageCustomCell.m */,
+				6F8F467015584B7500D57FD0 /* IHDataModel.h */,
+				6F8F467115584B7500D57FD0 /* IHDataModel.m */,
+				6F8F467315584C9600D57FD0 /* IHFileUtils.h */,
+				6F8F467415584C9600D57FD0 /* IHFileUtils.m */,
+				0110C66B14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.h */,
+				0110C66C14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.m */,
+			);
+			name = "Model&Utils";
+			sourceTree = "<group>";
+		};
+		6FBB7B731558026C003E4F9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6F402E1C155A59EE001273E6 /* others */,
+				6F402E1B155A596B001273E6 /* icons */,
+				6F402E1A155A5940001273E6 /* alphabet */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0110C65714ECA795008FAC4A /* Arabic Puzzle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0110C67C14ECA795008FAC4A /* Build configuration list for PBXNativeTarget "Arabic Puzzle" */;
+			buildPhases = (
+				0110C65414ECA795008FAC4A /* Sources */,
+				0110C65514ECA795008FAC4A /* Frameworks */,
+				0110C65614ECA795008FAC4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Arabic Puzzle";
+			productName = "Slider Puzzle";
+			productReference = 0110C65814ECA795008FAC4A /* Arabic Puzzle.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0110C64F14ECA795008FAC4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Islamhome.info;
+			};
+			buildConfigurationList = 0110C65214ECA795008FAC4A /* Build configuration list for PBXProject "Arabic Puzzle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				es,
+				fr,
+				id,
+				nl,
+			);
+			mainGroup = 0110C64D14ECA795008FAC4A;
+			productRefGroup = 0110C65914ECA795008FAC4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0110C65714ECA795008FAC4A /* Arabic Puzzle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0110C65614ECA795008FAC4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FB5FFBB15580C84004A456E /* settings_white.png in Resources */,
+				6FB5FFC315581964004A456E /* Localizable.strings in Resources */,
+				6FB50016155845D6004A456E /* settings.plist in Resources */,
+				6F8F467A1558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.xib in Resources */,
+				6FB3473015594601009C0D89 /* numpad_small.png in Resources */,
+				6FB3473315594618009C0D89 /* next_small.png in Resources */,
+				6FB347361559463A009C0D89 /* previous_small.png in Resources */,
+				6F706ACF155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.xib in Resources */,
+				6FC409BC155D33D500351045 /* b.png in Resources */,
+				6FC409BE155D342B00351045 /* a.png in Resources */,
+				6FC40A1A155D3CC600351045 /* d.png in Resources */,
+				6FC40A1B155D3CC600351045 /* d2.png in Resources */,
+				6FC40A1C155D3CC600351045 /* f.png in Resources */,
+				6FC40A1D155D3CC600351045 /* gh.png in Resources */,
+				6FC40A1E155D3CC600351045 /* h.png in Resources */,
+				6FC40A1F155D3CC600351045 /* h2.png in Resources */,
+				6FC40A20155D3CC600351045 /* j.png in Resources */,
+				6FC40A21155D3CC600351045 /* k.png in Resources */,
+				6FC40A22155D3CC600351045 /* kh.png in Resources */,
+				6FC40A23155D3CC600351045 /* l.png in Resources */,
+				6FC40A24155D3CC600351045 /* m.png in Resources */,
+				6FC40A25155D3CC600351045 /* n.png in Resources */,
+				6FC40A26155D3CC600351045 /* q.png in Resources */,
+				6FC40A27155D3CC600351045 /* r.png in Resources */,
+				6FC40A28155D3CC600351045 /* s.png in Resources */,
+				6FC40A29155D3CC600351045 /* s2.png in Resources */,
+				6FC40A2A155D3CC600351045 /* sh.png in Resources */,
+				6FC40A2B155D3CC600351045 /* t.png in Resources */,
+				6FC40A2C155D3CC600351045 /* th.png in Resources */,
+				6FC40A2D155D3CC600351045 /* th2.png in Resources */,
+				6FC40A2E155D3CC600351045 /* th3.png in Resources */,
+				6FC40A2F155D3CC600351045 /* w.png in Resources */,
+				6FC40A30155D3CC600351045 /* y.png in Resources */,
+				6FC40A31155D3CC600351045 /* z.png in Resources */,
+				6FC40A33155D3D0D00351045 /* aa.png in Resources */,
+				6FC40A35155D3FBA00351045 /* IHSlidingPuzzleImageSelectorViewController.xib in Resources */,
+				6FC40A37155D3FD200351045 /* IHSlidingPuzzleRootViewController.xib in Resources */,
+				6FC40A39155D403C00351045 /* settings.plist in Resources */,
+				6FC40A3B155D404300351045 /* settings.plist in Resources */,
+				6FC40A3D155D404C00351045 /* settings.plist in Resources */,
+				6FC40A3F155D405400351045 /* settings.plist in Resources */,
+				6FE962D71569535D00287DF9 /* Default@2x.png in Resources */,
+				6FE962D91569536100287DF9 /* Default.png in Resources */,
+				6FE962DB156955D300287DF9 /* icon@2x.png in Resources */,
+				6FE962DD1569561700287DF9 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0110C65414ECA795008FAC4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0110C66914ECA795008FAC4A /* main.m in Sources */,
+				0110C66D14ECA795008FAC4A /* IHSlidingPuzzleAppDelegate.m in Sources */,
+				0110C67014ECA795008FAC4A /* IHSlidingPuzzleRootViewController.m in Sources */,
+				0110C67314ECA795008FAC4A /* IHSlidingPuzzleImageSelectorViewController.m in Sources */,
+				0110C68814ECA9B2008FAC4A /* IHTileView.m in Sources */,
+				6F8F467215584B7500D57FD0 /* IHDataModel.m in Sources */,
+				6F8F467515584C9600D57FD0 /* IHFileUtils.m in Sources */,
+				6F8F46791558503000D57FD0 /* IHSlidingPuzzleImagePreviewViewController.m in Sources */,
+				6F53E22415596C8700D57A50 /* IHImageCustomCell.m in Sources */,
+				6F706ACE155AFD74005C5FB9 /* IHSlidingPuzzleSettingsViewController.m in Sources */,
+				6F31A8DA155C3EAA00EA112F /* MessageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6FB5FFC115581964004A456E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6FB5FFC215581964004A456E /* en */,
+				6FC40A38155D403C00351045 /* es */,
+				6FC40A3A155D404300351045 /* fr */,
+				6FC40A3C155D404C00351045 /* id */,
+				6FC40A3E155D405400351045 /* nl */,
+			);
+			name = Localizable.strings;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0110C67A14ECA795008FAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adil Ben Moussa (MHCN8NR9MB)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C53412C7-B65E-4A67-9478-7F87F5CBC58F";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0110C67B14ECA795008FAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Adil Ben Moussa (MHCN8NR9MB)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C53412C7-B65E-4A67-9478-7F87F5CBC58F";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0110C67D14ECA795008FAC4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Slider Puzzle/Arabic Puzzle-Prefix.pch";
+				INFOPLIST_FILE = "Slider Puzzle/Arabic Puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "Arabic Puzzle";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0110C67E14ECA795008FAC4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Slider Puzzle/Arabic Puzzle-Prefix.pch";
+				INFOPLIST_FILE = "Slider Puzzle/Arabic Puzzle-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "Arabic Puzzle";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0110C65214ECA795008FAC4A /* Build configuration list for PBXProject "Arabic Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0110C67A14ECA795008FAC4A /* Debug */,
+				0110C67B14ECA795008FAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0110C67C14ECA795008FAC4A /* Build configuration list for PBXNativeTarget "Arabic Puzzle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0110C67D14ECA795008FAC4A /* Debug */,
+				0110C67E14ECA795008FAC4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0110C64F14ECA795008FAC4A /* Project object */;
+}

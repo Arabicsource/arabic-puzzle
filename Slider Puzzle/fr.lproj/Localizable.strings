@@ -1,0 +1,28 @@
+//
+//  Localizations
+//  Sliding Puzzle
+//
+//  Created by Adil Ben Moussa on 5/7/12.
+//  Copyright (c) 2012 Islamhome.info. All rights reserved.
+//
+
+/////////////
+// Frensh 
+/////////////
+"Start" = "Commencer";
+"Reset" = "Reset";
+"Image preview" = "Image preview";
+"Image" = "Image";
+"Settings" = "Paramètres";
+"Select new puzzle" = "Nouveau casse-tête";
+"Tell a friend" = "Envoyer à un ami";
+"About app" = "A propos de %@";
+"Write a review" = "Ecrire un commentaire";
+"You Won!" = "Vous avez Gagné!";
+"Great Job!" = "Bon Travail!";
+"OK" = "Oui";
+"Show numbers" = "Afficher les numéros:";
+"Difficulty level" = "Niveau de difficulté:";
+"Created by" = "Créé par %@";
+"Copyright"= "© %@";
+"Tell a friend message" = "J'ai découvert cette application pour l'iPhone, iPod et iPad.<b><a href=\"%@\">%@</a></b>";
